@@ -6,10 +6,10 @@ to output 4 pins, up, down, left & right
 int UD = 0;
 int LR = 0;
 /* Arduino Micro output pins*/
-int DWN = 12;
-int UP = 11;
-int LEFT = 10;
-int RT = 9;
+int DWN = 13;
+int UP = 12;
+int LEFT = 11;
+int RT = 10;
 /* Arduino Micro Input Pins */
 int IUP=A0;
 int ILR=A1;
