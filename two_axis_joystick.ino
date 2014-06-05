@@ -24,10 +24,10 @@ void setup(){
   pinMode(LEFT, OUTPUT); 
   pinMode(RT, OUTPUT);
    
-  digitalWrite(DWN, LOW);
-  digitalWrite(UP, LOW);
-  digitalWrite(LEFT, LOW);
-  digitalWrite(RT, LOW);
+  digitalWrite(DWN, HIGH);
+  digitalWrite(UP, HIGH);
+  digitalWrite(LEFT, HIGH);
+  digitalWrite(RT, HIGH);
   
   //calabrate center
   LRMID = analogRead(ILR);
@@ -40,27 +40,27 @@ void loop(){
   LR = analogRead(ILR);
   // UP-DOWN
   if(UD < UPMID - MID){
-   digitalWrite(DWN, HIGH);
-  }else{
    digitalWrite(DWN, LOW);
+  }else{
+   digitalWrite(DWN, HIGH);
   }
   
   if(UD > UPMID + MID){
-   digitalWrite(UP, HIGH);
-  }else{
    digitalWrite(UP, LOW);
+  }else{
+   digitalWrite(UP, HIGH);
   }
   // LEFT-RIGHT
   if(LR < LRMID - MID){
-   digitalWrite(LEFT, HIGH);
-  }else{
    digitalWrite(LEFT, LOW);
+  }else{
+   digitalWrite(LEFT, HIGH);
   }
   
   if(LR > LRMID + MID){
-   digitalWrite(RT, HIGH);
-  }else{
    digitalWrite(RT, LOW);
+  }else{
+   digitalWrite(RT, HIGH);
   }
  
   delay(400);
