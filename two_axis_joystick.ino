@@ -1,6 +1,10 @@
 /*Philip Vallone
 2-axis joystick connected to an Arduino Micro
 to output 4 pins, up, down, left & right
+
+If you are using pull down resistors, change all the HIGHs to LOWs and LOWs to HIGH.
+This skectch is using pull up resistors.
+
 */
 
 int UD = 0;
